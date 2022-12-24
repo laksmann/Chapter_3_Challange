@@ -1,0 +1,325 @@
+body {
+    margin: 0px;
+}
+.sec-1{
+  background: radial-gradient(rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%),url(./background_123.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: center;
+  /* mengatur positioning di sumbu-vertical */
+  align-items: center;
+  text-align: center;
+}
+
+.background{
+    background-size: cover;
+    width: 100vw; 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    /* background-color: aqua; */
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-text{
+    /* background-color: blueviolet; */
+    color: white;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-left: 40px;
+}
+.list-menu{
+    /* background-color: blue; */
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.live-menu-item{
+    color: #ffffff;
+}
+.login-and-signup-container{
+    /* background-color: brown; */
+    display: flex;
+    padding-right: 40px;
+    gap: 20px;
+}
+.auth-button{
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: right;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    background: none;
+    line-height: 16px;
+    }
+.text-1{
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: center;
+  /* mengatur positioning di sumbu-vertical */
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 100px;
+  line-height:106px;
+}
+.text-play {
+  font-family: Arial;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 83px;
+  letter-spacing: 3px;
+  text-align: center;         
+  color: #FFFFFF;
+}
+.text-experience {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.button-play{
+background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  padding: 22px 90px;
+}
+
+/* sec-2 */
+
+.sec-2{
+  background:url(./background2.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.text-2{
+  font-family: Arial;
+  margin-top: 250px;
+  margin-left: 100px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: white;
+  font-family: Arial;
+  text-align: left;
+}
+.text-what{
+  font-family: 'Arial';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  }
+.text-game{
+  ont-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 64px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* tes */
+.slider{
+  overflow: hidden;
+  width: 600px;
+  height: 350px;
+  margin-top: 300px;
+  margin-left: 100px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+
+.slides{
+  width: 500%;
+  height: 350px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 350px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin-top: -40px;
+}
+
+.manual-btn{
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  border: 1px solid white;
+  padding: 4px;
+  width: 0px;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  justify-content: center;
+  margin-top: 460px;
+  display: flex;
+  width: 800px;
+}
+
+.navigation-auto div{
+  border-radius: 10px;
+  transition: 1s;
+  border: 3px solid white;
+  padding: 5px;
+  width: 30px;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: white;
+}
+/* bagian 3 */
+.sec-3{
+  background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),url(./background3.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: end;
+  /* mengatur positioning di sumbu-vertical */
+}
+.text-3{
+  font-family: Arial;
+  margin-top: 150px;
+  margin-right: 360px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: white;
+  font-family: Arial;
+  text-align: left;
+}
+.text-what2{
+  font-family: 'Arial';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  }
+.text-features{
+  ont-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 64px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* bagian 4 */
+.sec-4{
+  background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 129.74%),url(./background4.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: center;
+  /* mengatur positioning di sumbu-vertical */
+  align-items: center;
+  text-align: center;
+}
+/* bagian 5 */
+.sec-5{
+  background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),url(./background5.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: center;
+  /* mengatur positioning di sumbu-vertical */
+  align-items: center;
+  text-align: center;
+}
+/* bagian 6 */
+.sec-6{
+  background:black;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* mengatur positioning di sumbu-horizontal */
+  justify-content: center;
+  /* mengatur positioning di sumbu-vertical */
+  align-items: center;
+  text-align: center;
+}
