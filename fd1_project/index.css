@@ -407,15 +407,101 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+.item {
+  margin: 2px;
+  color: white;
+}
+
+.main-container {
   display: flex;
+  width: calc(100vw - 16px);
+  height: calc(100vh - 16px);
+  align-items: center;
+  justify-content: center;
 }
-.quote-1 {
-  text-align: center;
+
+.main-container div.container {
+  flex-grow: 1;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 }
-.quote-2 {
-  text-align: start;
+
+.main-container div.first-container {
+  flex: 2; /* because in the picture you posted the first box was a bit larger */
+  margin-top: 250px;
+  margin-right: 25px;
+  margin-top: 500px;
 }
-.quote-3 {
+.item-first {
+  text-align: left;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.main-container div.container div {
+  flex-grow: 1;
+}
+.see {
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  padding: 22px 50px;
+  margin-bottom: 1000%;
+  color: #08090a;
+}
+.topscores {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.thisscore {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+
+.item-second {
+  width: 200px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  margin-left: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ellipse1 {
+  height: 80px;
+  width: 80px;
+  background-color: green;
+  border-radius: 50%;
+  margin-top: 50px:;
+}
+.textimg1{
+  margin-left: 100px;
+  margin-bottom: 1000px;
+}
+.item-third {
+  background: rgba(255, 255, 255, 0.08);
+  width: 200px;
+  height: 100px;
+}
+.item-fourth {
+  width: 200px;
+  height: 100px;
+  background: green;
+  margin-left: 250px;
 }
 /* bagian 6 */
 .sec-6 {
@@ -441,7 +527,7 @@ body {
   gap: 50px;
   list-style-type: none;
   font-size: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .copyright {
   display: flex;
@@ -458,5 +544,59 @@ body {
   line-height: 19px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 10px;
+}
+.email {
+  background-color: #080a0b;
+}
+
+/* tes */
+.flex-container {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  padding: 0px;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: black;
+  padding: 0px;
+  font-size: 30px;
+  margin-left: 170px;
+  margin-top: 30px;
+}
+.satu {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+
+  color: #ffffff;
+}
+.dua {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 75px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.tiga {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+.email {
 }
